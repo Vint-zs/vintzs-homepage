@@ -86,16 +86,16 @@ class Main extends React.Component {
             <img src={pic03} alt="" />
           </span>
           <pre>
-            서영운
+            서 영 운
 
             약력
-            (현)서울대학교 bio intelligence lab 인턴
-            (전)키즈노트 안드로이드 개발자
-            중앙대학교 공학교육혁신센터 창업공모전 은상
-            (현)중앙대학교 소프트웨어전공
+            · (현)서울대학교 bio intelligence lab 인턴
+            · (전)키즈노트 안드로이드 개발자
+            · 중앙대학교 공학교육혁신센터 창업공모전 은상
+            · (현)중앙대학교 소프트웨어전공
 
             담당
-            대표 / 서버 개발
+            · 대표 / 서버 개발
           </pre>
           <span className="image main">
             <img src={pic04} alt="" />
@@ -104,9 +104,13 @@ class Main extends React.Component {
             권현빈
 
             약력
-            
+            · (전)중앙대학교 인지각 연구실 SW개발 인턴
+            · (전)하얀마인드 영어 교육 앱 개발 인턴
+            · 삼성SDS pro 알고리즘 자격증
+            · (현)중앙대학교 컴퓨터공학전공
+
             담당
-            
+            · 앱/웹 개발
           </pre>
           <span className="image main">
             <img src={pic05} alt="" />
@@ -123,20 +127,20 @@ class Main extends React.Component {
 
             담당
             · 사업기획 / 마케팅
-            
           </pre>
           <span className="image main">
             <img src={pic06} alt="" />
           </span>
           <pre>
-            김준오
+            김 준 오
 
             약력
-            
+            · (현) 인공지능 스타트업 근무
+            · (전) sundosoft  개발팀 근무
+            · (현) 중앙대 소프트웨어 전공
 
             담당
-            
-            
+            · ios 개발
           </pre>
           {close}
         </article>
