@@ -5,7 +5,7 @@ import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/영운.jpg'
 import pic04 from '../images/현빈.jpg'
 import pic05 from '../images/소윤.jpg'
-import pic06 from '../images/소윤.jpg'
+import pic06 from '../images/준오.jpg'
 
 class Main extends React.Component {
   render() {
