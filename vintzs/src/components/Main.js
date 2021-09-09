@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import pic01 from '../images/로고1.png'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic03 from '../images/영운.jpg'
+import pic04 from '../images/현빈.jpg'
+import pic05 from '../images/소윤.jpg'
+import pic06 from '../images/소윤.jpg'
 
 class Main extends React.Component {
   render() {
@@ -22,65 +25,48 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="PetPal"
+          className={`${this.props.article === 'PetPal' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">PetPal</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Welcome To PetPal village. Send a message through a lovely pet and make friends! 
+            you can download it hear 
+            <a href="#work"> android</a> / 
+            <a href="#work">ios</a>.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Hi!
           </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="Meeting Univ."
+          className={`${this.props.article === 'Meeting Univ.' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">미팅대학</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            We are building '미팅 대학' service in Korea. 
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            It will be released in March 2022.
+            <br/>
+            See you!
           </p>
+          
           {close}
         </article>
 
@@ -92,22 +78,70 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
+          <p>
+            Let me introduce our people!
+          </p>
+            
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <pre>
+            서영운
+
+            약력
+            (현)서울대학교 bio intelligence lab 인턴
+            (전)키즈노트 안드로이드 개발자
+            중앙대학교 공학교육혁신센터 창업공모전 은상
+            (현)중앙대학교 소프트웨어전공
+
+            담당
+            대표 / 서버 개발
+          </pre>
+          <span className="image main">
+            <img src={pic04} alt="" />
+          </span>
+          <pre>
+            권현빈
+
+            약력
+            
+            담당
+            
+          </pre>
+          <span className="image main">
+            <img src={pic05} alt="" />
+          </span>
+          <pre>
+            오 소 윤
+
+            약력
+            · 모은행 글로벌플랫폼부 재직
+            · aT 폴란드사무소 인턴
+            · 두유요거트 오소야 창업
+            · 고려사이버대 AI 전공
+            · 한국외대 프랑스어 전공
+
+            담당
+            · 사업기획 / 마케팅
+            
+          </pre>
+          <span className="image main">
+            <img src={pic06} alt="" />
+          </span>
+          <pre>
+            김준오
+
+            약력
+            
+
+            담당
+            
+            
+          </pre>
           {close}
         </article>
 
-        <article
+        {/* <article
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -166,7 +200,7 @@ class Main extends React.Component {
             </li>
           </ul>
           {close}
-        </article>
+        </article> */}
       </div>
     )
   }
