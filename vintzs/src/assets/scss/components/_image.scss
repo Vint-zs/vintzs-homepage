@@ -12,21 +12,6 @@
 		display: inline-block;
 		position: relative;
 
-		&:before {
-			@include vendor('pointer-events', 'none');
-			background-image: url('../../images/overlay.png');
-			background-color: _palette(bg-overlay);
-			border-radius: _size(border-radius);
-			content: '';
-			display: block;
-			opacity: 0.5;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 200px;
-			height: 300px;
-		}
-
 		img {
 			border-radius: _size(border-radius);
 			display: block;
@@ -71,6 +56,14 @@
 			img {
 				width: 200px;
 				height: 300px;
+			}
+		}
+
+		&.big {
+			display: block;
+			margin: (_size(element-margin) * 1.25) 0;
+			img {
+				width: 80%;
 			}
 		}
 
