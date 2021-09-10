@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/vintzs-homepage',
   siteMetadata: {
     title: 'Vintzs Company',
     author: 'Vintzs',
