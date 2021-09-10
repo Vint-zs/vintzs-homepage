@@ -59,11 +59,12 @@
 			}
 		}
 
-		&.big {
+		&.small {
 			display: block;
 			margin: (_size(element-margin) * 1.25) 0;
+			margin-bottom: -(_size(element-margin) * 0.25)/100;
 			img {
-				width: 80%;
+				width: 30%;
 			}
 		}
 
