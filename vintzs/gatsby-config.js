@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/Vint-zs.github.io',
   siteMetadata: {
     title: 'Vintzs Company',
     author: 'Vintzs',
