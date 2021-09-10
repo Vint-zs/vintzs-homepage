@@ -95,63 +95,67 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <pre>
+          <ul>
             서 영 운
-
+            <br />
             약력
-            · (현)서울대학교 bio intelligence lab 인턴
-            · (전)키즈노트 안드로이드 개발자
-            · 중앙대학교 공학교육혁신센터 창업공모전 은상
-            · (현)중앙대학교 소프트웨어전공
-
+            <br />
+            <li>(현)서울대학교 bio intelligence lab 인턴</li>
+            <li>(전)키즈노트 안드로이드 개발자</li>
+            <li>중앙대학교 공학교육혁신센터 창업공모전 은상</li>
+            <li>(현)중앙대학교 소프트웨어전공</li>
+            <br />
             담당
-            · 대표 / 서버 개발
-          </pre>
+            <li>대표 / 서버 개발</li>
+          </ul>
           <span className="image main">
             <img src={pic04} alt="" />
           </span>
-          <pre>
-            권현빈
-
+          <ul>
+            권 현 빈
+            <br />
             약력
-            · (전)중앙대학교 인지각 연구실 SW개발 인턴
-            · (전)하얀마인드 영어 교육 앱 개발 인턴
-            · 삼성SDS pro 알고리즘 자격증
-            · (현)중앙대학교 컴퓨터공학전공
-
+            <br />
+            <li>(현)엘리스 AI 트랙 전산학, 웹 프론트 실습 코치</li>
+            <li>(전)중앙대학교 인지각 연구실 SW개발 인턴</li>
+            <li>(전)하얀마인드 영어 교육 앱 개발 인턴</li>
+            <li>삼성SDS pro 알고리즘 자격증</li>
+            <li>(현)중앙대학교 컴퓨터공학전공</li>
+            <br />
             담당
-            · 앱/웹 개발
-          </pre>
+            <li>앱/웹 개발</li>
+          </ul>
           <span className="image main">
             <img src={pic05} alt="" />
           </span>
-          <pre>
+          <span>
             오 소 윤
-
+            <br />
             약력
-            · 모은행 글로벌플랫폼부 재직
-            · aT 폴란드사무소 인턴
-            · 두유요거트 오소야 창업
-            · 고려사이버대 AI 전공
-            · 한국외대 프랑스어 전공
-
+            <li>모은행 글로벌플랫폼부 재직</li>
+            <li>aT 폴란드사무소 인턴</li>
+            <li>두유요거트 오소야 창업</li>
+            <li>고려사이버대 AI 전공</li>
+            <li>한국외대 프랑스어 전공</li>
+            <br />
             담당
-            · 사업기획 / 마케팅
-          </pre>
+            <br />
+            <li>사업기획 / 마케팅</li>
+          </span>
           <span className="image main">
             <img src={pic06} alt="" />
           </span>
-          <pre>
+          <span>
             김 준 오
-
+            <br />
             약력
-            · (현) 인공지능 스타트업 근무
-            · (전) sundosoft  개발팀 근무
-            · (현) 중앙대 소프트웨어 전공
-
+            <li>(현) 인공지능 스타트업 근무</li>
+            <li>(전) sundosoft  개발팀 근무</li>
+            <li>(현) 중앙대 소프트웨어 전공</li>
+            <br />
             담당
-            · ios 개발
-          </pre>
+            <li>ios 개발</li>
+          </span>
           {close}
         </article>
 
