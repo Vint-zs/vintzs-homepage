@@ -3,7 +3,7 @@ import React from 'react'
 import pic01 from '../images/로고1.png'
 import pic02 from '../images/pic02.jpg'
 
-import About from './About';
+import About from './About'
 
 class Main extends React.Component {
   render() {
@@ -29,59 +29,64 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-            <h2 className="major">PetPal</h2>
-            <span className="image big">
-              <img src={pic01} alt="" />
-            </span>
-            <span>
-              Welcome to PetPal Village!<br/>
-              <br/>
-              In our village, various neighbors around the world are living.<br/>
-              Send and receive letters with them and become pals to each other.<br/>
-              <br/>
-              Your pets will deliver letters and connect you to the world.<br/>
-              <br/>
-              Start a conversation that will make your heart flutter!<br/>
-              <br/>
-              <br/>
-              · Mailing time depends on types of pets. Adjust the mailing time by selecting the pet<br/>
-              · Pets will match you the right neighbors based on your interest and used language<br/>
-              · Adopt diverse pets of your choice and customize their features
-            </span>
+          <h2 className="major">PetPal</h2>
+          <span className="image big">
+            <img src={pic01} alt="" />
+          </span>
+          <span>
+            Welcome to PetPal Village!
+            <br />
+            <br />
+            In our village, various neighbors around the world are living.
+            <br />
+            Send and receive letters with them and become pals to each other.
+            <br />
+            <br />
+            Your pets will deliver letters and connect you to the world.
+            <br />
+            <br />
+            Start a conversation that will make your heart flutter!
+            <br />
+            <br />
+            <br />
+            · Mailing time depends on types of pets. Adjust the mailing time by
+            selecting the pet
+            <br />
+            · Pets will match you the right neighbors based on your interest and
+            used language
+            <br />· Adopt diverse pets of your choice and customize their
+            features
+          </span>
           <br />
           <br />
           <p>
-            <a href="#work">android</a> / 
-            <a href="#work">ios</a>.
+            <a href="#work">android</a> /<a href="#work">ios</a>.
           </p>
           {close}
         </article>
 
         <article
           id="Meeting Univ."
-          className={`${this.props.article === 'Meeting Univ.' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${
+            this.props.article === 'Meeting Univ.' ? 'active' : ''
+          } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className="major">미팅대학</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>
-            We are building '미팅 대학' service in Korea. 
-          </p>
+          <p>We are building '미팅 대학' service in Korea.</p>
           <p>
             It will be released in March 2022.
-            <br/>
+            <br />
             See you!
           </p>
-          
+
           {close}
         </article>
 
-        
-        <About props={this.props}/>
+        <About props={this.props} />
 
         {/* <article
           id="contact"
