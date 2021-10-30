@@ -1,9 +1,6 @@
 import React from 'react'
 import * as S from './style'
-
-const BRIEF = '약력'
-const ROLE = '담당'
-const PROFILE_IMAGE = '프로필 사진'
+import { PROFILE_IMAGE, BRIEF, ROLE } from '../../constants/member'
 
 export default function Member({ imgSrc, name, records, personalRole }) {
   return (
