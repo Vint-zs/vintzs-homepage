@@ -1,4 +1,4 @@
-export const yyRecord = [
+export const ywRecord = [
   '(현)서울대학교 bio intelligence lab 인턴',
   '(전)키즈노트 안드로이드 개발자',
   '중앙대학교 공학교육혁신센터 창업공모전 은상',

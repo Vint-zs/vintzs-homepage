@@ -8,7 +8,7 @@ import joonoh from '../../images/준오.png'
 import hyunjoon from '../../images/현준.png'
 
 import {
-  yyRecord,
+  ywRecord,
   hbRecord,
   syRecord,
   joRecord,
@@ -43,7 +43,7 @@ export default function About({ props }) {
       <Member
         imgSrc={youngwon}
         name={'서영운'}
-        records={yyRecord}
+        records={ywRecord}
         personalRole={'대표 / 서버 개발'}
       />
       <Member
