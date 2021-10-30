@@ -34,28 +34,16 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <span>
-            Welcome to PetPal Village!
-            <br />
-            <br />
-            In our village, various neighbors around the world are living.
-            <br />
-            Send and receive letters with them and become pals to each other.
-            <br />
-            <br />
-            Your pets will deliver letters and connect you to the world.
-            <br />
-            <br />
-            Start a conversation that will make your heart flutter!
-            <br />
-            <br />
-            <br />
-            · Mailing time depends on types of pets. Adjust the mailing time by
-            selecting the pet
-            <br />
-            · Pets will match you the right neighbors based on your interest and
-            used language
-            <br />· Adopt diverse pets of your choice and customize their
-            features
+            Welcome to PetPal Village!<br/>
+            <br/>
+            In our village, various neighbors around the world are living.<br/>
+            Send and receive letters with them and become pals to each other.<br/>
+            Your pets will deliver letters and connect you to the world.<br/>
+            Start a conversation that will make your heart flutter!<br/>
+            <br/>
+            · Mailing time depends on types of pets. Adjust the mailing time by selecting the pet<br/>
+            · Pets will match you the right neighbors based on your interest and used language<br/>
+            · Adopt diverse pets of your choice and customize their features
           </span>
           <br />
           <br />
@@ -73,10 +61,12 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">미팅대학</h2>
-          <span className="image main">
+          {/* <span className="image main">
             <img src={pic02} alt="" />
-          </span>
-          <p>We are building '미팅 대학' service in Korea.</p>
+          </span> */}
+          <p>
+            We are building '미팅 대학' service in Korea. 
+          </p>
           <p>
             It will be released in March 2022.
             <br />
