@@ -54,8 +54,8 @@
 			margin: (_size(element-margin) * 1.25) 0;
 			width: 30%;
 			img {
+				object-fit: cover;
 				width: 200px;
-				height: 300px;
 			}
 		}
 
