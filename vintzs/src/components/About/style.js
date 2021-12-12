@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const MemberInfor = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
-  height: 360px;
+  height: 400px;
+  margin-top: 30px;
 
   .profile-img {
     margin: 0px 20px 0px 0px;

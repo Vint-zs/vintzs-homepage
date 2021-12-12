@@ -30,10 +30,10 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">PetPal</h2>
-          <span className="image big">
-            <img src={pic01} alt="" />
-          </span>
-          <span>
+          <div className="image big">
+            <img src={pic01} alt="" style={{ width: '20%' }}/>
+          </div>
+          <div>
             Welcome to PetPal Village!<br/>
             <br/>
             In our village, various neighbors around the world are living.<br/>
@@ -44,7 +44,7 @@ class Main extends React.Component {
             · Mailing time depends on types of pets. Adjust the mailing time by selecting the pet<br/>
             · Pets will match you the right neighbors based on your interest and used language<br/>
             · Adopt diverse pets of your choice and customize their features
-          </span>
+          </div>
           <br />
           <br />
           <p>
