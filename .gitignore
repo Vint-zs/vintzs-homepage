@@ -5,5 +5,5 @@ yarn-error.log
 .vscode
 
 # Build directory
-/public
+/dist
 .DS_Store
