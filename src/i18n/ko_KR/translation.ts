@@ -4,9 +4,9 @@ const koreanText = {
     about: '우리가 누구?',
     contact: '빈츠 합류하기',
   },
-  hello: '안녕하세요',
-  language_en: 'English',
-  language_ko: '한국어',
+  footer: {
+    copyright: 'Copyright 2021. Vintzs all rights reserved.',
+  },
 };
 
 export default koreanText;

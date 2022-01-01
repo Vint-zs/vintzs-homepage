@@ -1,15 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import HeaderLogo from 'assets/header/HeaderLogo.svg';
 import { color } from 'GlobalStyle';
-
-type SelectedType = 'home' | 'about' | 'contact';
-
-interface IHeader {
-  selected: SelectedType;
-}
 
 interface IMenuFont {
   selected: boolean;
@@ -52,25 +46,39 @@ const SContainer = styled.div`
       width: 105px;
     }
   }
+
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: 500;
+  }
 `;
 
-const Header = ({ selected }: IHeader) => {
+const Header = () => {
   const { t } = useTranslation();
+  const selected = useLocation().pathname;
 
   return (
     <SContainer>
       <div className="innerContainer">
-        <HeaderLogo src={HeaderLogo} />
+        <HeaderLogo />
         <div className="navContainer">
           <Link to="/">
-            {<STypo selected={selected === 'home'}>{t('header.home')}</STypo>}
+            {<STypo selected={selected === '/'}>{t('header.home')}</STypo>}
           </Link>
           <Link to="/about">
-            {<STypo selected={selected === 'about'}>{t('header.about')}</STypo>}
+            {
+              <STypo selected={selected === '/about'}>
+                {t('header.about')}
+              </STypo>
+            }
           </Link>
           <Link to="/contact">
             {
-              <STypo selected={selected === 'contact'}>
+              <STypo selected={selected === '/contact'}>
                 {t('header.contact')}
               </STypo>
             }
