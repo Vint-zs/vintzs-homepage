@@ -17,6 +17,21 @@ export const theme: DefaultTheme = {
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
+  @font-face {
+    font-family: "Gmarket Sans";
+    src: local("./assets/font/GmarketSansTTFLight.ttf") format('truetype');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Gmarket Sans";
+    src: local("./assets/font/GmarketSansTTFMedium.ttf");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Gmarket Sans";
+    src: local("./assets/font/GmarketSansTTFBold.ttf");
+    font-weight: 700;
+  }
   * {
     margin: 0px;
     padding: 0px; 
@@ -25,10 +40,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     width: 100vw;
     min-height: 100vh;
+    .root {
+      position: relative;
+    }
   }
 
   h1, h2, h3, h4, h5, h6, p, a, div, span, button {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', 'Gmarket Sans' sans-serif;
   }
 `;
 
