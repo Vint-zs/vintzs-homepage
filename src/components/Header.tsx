@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import HeaderLogo from 'assets/header/HeaderLogo.svg';
 import { color } from 'GlobalStyle';
 
-interface IMenuFont {
+interface ITypo {
   selected: boolean;
 }
 
-const STypo = styled.p<IMenuFont>`
+const STypo = styled.p<ITypo>`
   color: ${(props) => {
     if (props.selected) return color.selectedBlueFont;
     return color.disabledFont;

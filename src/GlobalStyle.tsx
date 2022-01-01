@@ -5,6 +5,7 @@ import { normalize } from 'styled-normalize';
 export const color = {
   selectedBlueFont: '#138EFF',
   defaultBlackFont: '#333333',
+  secondaryBlackFont: '#666666',
   disabledFont: '#D2D2D2',
   defaultBackground: '#FAFAFA',
 };
@@ -40,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
     .root {
       position: relative;
     }
