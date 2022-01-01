@@ -19,8 +19,10 @@ const STypo = styled.p<IMenuFont>`
 const SContainer = styled.div`
   width: 100%;
   position: sticky;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(16px);
+  top: 0px;
+  z-index: 200;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
   padding: 16px 0px;
   display: flex;
   flex-direction: row;
