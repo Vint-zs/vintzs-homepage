@@ -52,6 +52,15 @@ const SContainer = styled.div`
       width: 105px;
     }
   }
+
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: 500;
+  }
 `;
 
 const Header = ({ selected }: IHeader) => {
@@ -60,7 +69,7 @@ const Header = ({ selected }: IHeader) => {
   return (
     <SContainer>
       <div className="innerContainer">
-        <HeaderLogo src={HeaderLogo} />
+        <HeaderLogo />
         <div className="navContainer">
           <Link to="/">
             {<STypo selected={selected === 'home'}>{t('header.home')}</STypo>}
