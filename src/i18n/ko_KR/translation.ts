@@ -15,6 +15,9 @@ const koreanText = {
       '새로운 시도와 새로운 서비스를 좋아하며, 다양한 기쁨을 선물해줄 서비스를 준비해요.',
     introduce_third_string: '빈츠 월드에 오신것을 환영합니다.',
   },
+  footer: {
+    copyright: 'Copyright 2021. Vintzs all rights reserved.',
+  },
 };
 
 export default koreanText;

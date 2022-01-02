@@ -7,6 +7,7 @@ export const color = {
   defaultBlackFont: '#333333',
   disabledFont: '#D2D2D2',
   introduceContentFont: '#666666',
+  defaultBackground: '#FAFAFA',
 };
 
 export type Palette = { [K in keyof typeof color]: K };
@@ -18,22 +19,17 @@ export const theme: DefaultTheme = {
 const GlobalStyle = createGlobalStyle`
   ${normalize}
   * {
-    -webkit-print-color-adjust: exact;
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px; 
   }
 
+  body {
+    width: 100vw;
+    min-height: 100vh;
+  }
+
   h1, h2, h3, h4, h5, h6, p, a, div, span, button {
     font-family: 'Noto Sans KR', sans-serif;
-  }
-
-  a, a:visited {
-     text-decoration: none;
-  }
-
-  a:hover {
-    font-weight: 700;
   }
 `;
 
