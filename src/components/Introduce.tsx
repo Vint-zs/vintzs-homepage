@@ -42,10 +42,10 @@ const SContainer = styled.div`
 
 const SContentTypo = styled.div`
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 23px;
   text-align: center;
-  color: ${color.introduceContentFont};
+  color: ${color.secondaryTextColor};
 `;
 
 const Introduce = () => {
@@ -62,8 +62,8 @@ const Introduce = () => {
       </div>
       <p className="introduceContent">
         <SContentTypo>{t('about_page.introduce_first_string')}</SContentTypo>
+        <br />
         <SContentTypo>{t('about_page.introduce_second_string')}</SContentTypo>
-        <SContentTypo>{t('about_page.introduce_third_string')}</SContentTypo>
       </p>
     </SContainer>
   );
