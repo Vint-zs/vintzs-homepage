@@ -20,7 +20,7 @@ const SContainer = styled.div`
     width: 1200px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
   .textContainer {
     height: 100%;
@@ -32,33 +32,32 @@ const SImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  div {
+    width: 480px;
+    height: 640px;
+    border-radius: 190px;
+    box-shadow: 0px 8px 24px rgba(249, 153, 148, 0.1);
+  }
+
   .left {
-    width: 487px;
-    height: 646px;
-    border-radius: 191px;
     background: linear-gradient(
       2.7deg,
       #ffd8d6 -11.08%,
       rgba(255, 216, 214, 0) 92.88%
     );
-    box-shadow: 0px 8px 24px rgba(249, 153, 148, 0.1);
-    border-radius: 191px;
     transform: rotate(23.43deg);
     & > * {
       transform: rotate(-23.43deg);
     }
   }
   .right {
-    width: 487px;
-    height: 646px;
-    border-radius: 191px;
     background: linear-gradient(
       2.7deg,
       #ffd8d6 -11.08%,
       rgba(255, 216, 214, 0) 92.88%
     );
-    box-shadow: 0px 8px 24px rgba(249, 153, 148, 0.1);
-    border-radius: 191px;
     transform: rotate(-27.85deg);
     & > * {
       transform: rotate(27.85deg);

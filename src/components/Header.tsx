@@ -54,7 +54,8 @@ const SContainer = styled.div`
     text-decoration: none;
   }
 
-  a:hover {
+  p:hover {
+    color: ${(props) => props.theme.palette.defaultBlackFont};
     font-weight: 500;
   }
 `;
