@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import IntroduceTitleBack from 'assets/about/introduceTitleBack.svg';
+import IntroduceTitleBack from 'assets/about/IntroduceTitleBackground.svg';
 import TitleTypo from 'components/TitleTypo';
 import { color } from 'GlobalStyle';
 
