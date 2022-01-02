@@ -6,6 +6,7 @@ export const color = {
   selectedBlueFont: '#138EFF',
   defaultBlackFont: '#333333',
   disabledFont: '#D2D2D2',
+  secondaryTextColor: '#666666',
   defaultBackground: '#FAFAFA',
 };
 

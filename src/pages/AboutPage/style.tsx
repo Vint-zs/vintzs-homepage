@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const SContainer = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -8,4 +8,4 @@ const Container = styled.div`
   align-items: center;
 `;
 
-export default Container;
+export default SContainer;
