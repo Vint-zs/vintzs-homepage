@@ -51,6 +51,11 @@ const SImageContainer = styled.div`
     & > * {
       transform: rotate(-23.43deg);
     }
+    & > svg {
+      position: absolute;
+      left: 30px;
+      bottom: 50px;
+    }
   }
   .right {
     background: linear-gradient(
