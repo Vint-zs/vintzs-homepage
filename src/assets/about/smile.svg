@@ -1,0 +1,18 @@
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="125.5" cy="125.5" r="84" fill="white" stroke="black" stroke-width="7"/>
+<rect x="91.375" y="83.7919" width="12.25" height="35" rx="6.125" fill="black"/>
+<rect x="147.375" y="83.7919" width="12.25" height="35" rx="6.125" fill="black"/>
+<path d="M80 151.75C90.5 165.167 104.369 173.043 123.75 173.333C143.748 173.633 160.646 161.958 171 151.75" stroke="black" stroke-width="7" stroke-linecap="round"/>
+<circle cx="79.5" cy="138.5" r="17.5" fill="url(#paint0_radial_229_1648)"/>
+<circle cx="174.5" cy="138.5" r="17.5" fill="url(#paint1_radial_229_1648)"/>
+<defs>
+<radialGradient id="paint0_radial_229_1648" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(79.5 138.5) rotate(90) scale(17.5)">
+<stop stop-color="#FFACAC"/>
+<stop offset="1" stop-color="#FFD0D0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_229_1648" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(174.5 138.5) rotate(90) scale(17.5)">
+<stop stop-color="#FFACAC"/>
+<stop offset="1" stop-color="#FFD0D0" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
