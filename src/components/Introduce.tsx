@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import IntroduceTitleBack from 'assets/about/introduceTitleBack.svg';
+import IntroduceTitleBack from 'assets/about/IntroduceTitleBack.svg';
 import TitleTypo from 'components/TitleTypo';
 import { color } from 'GlobalStyle';
 
@@ -31,13 +31,12 @@ const SContainer = styled.div`
   }
   @keyframes draw {
     0% {
-      clip: rect( 0px, 0px, 100px, 0px );
-
+      clip: rect(0px, 0px, 100px, 0px);
     }
     100% {
-      clip: rect( 0px, 400px, 100px, 0px );
-
+      clip: rect(0px, 400px, 100px, 0px);
     }
+  }
 `;
 
 const SContentTypo = styled.div`
