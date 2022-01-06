@@ -6,6 +6,7 @@ import Header from 'components/Header';
 import AboutPage from 'pages/AboutPage';
 import ContactPage from 'pages/ContactPage';
 import LandingPage from 'pages/LandingPage';
+import NotFoundPage from 'pages/NotFoundPage';
 
 const App: React.FC = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const App: React.FC = () => (
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </AppContainer>
     <Footer />
