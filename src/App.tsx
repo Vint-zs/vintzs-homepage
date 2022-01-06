@@ -7,7 +7,7 @@ import LandingPage from 'pages/LandingPage';
 
 const App: React.FC = () => (
   <BrowserRouter>
-    <Header></Header>
+    <Header />
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/about" element={<AboutPage />} />

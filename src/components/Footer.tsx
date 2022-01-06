@@ -12,8 +12,6 @@ const SContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${color.defaultBackground};
-  position: absolute;
-  bottom: 0px;
 
   .innerContainer {
     width: 1200px;

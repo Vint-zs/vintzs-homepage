@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import HeaderLogo from 'assets/header/HeaderLogo.svg';
 import { color } from 'GlobalStyle';
 
-interface IMenuFont {
+interface ITypo {
   selected: boolean;
 }
 
-const STypo = styled.p<IMenuFont>`
+const STypo = styled.p<ITypo>`
   color: ${(props) => {
     if (props.selected) return color.selectedBlueFont;
     return color.disabledFont;
@@ -19,8 +19,10 @@ const STypo = styled.p<IMenuFont>`
 const SContainer = styled.div`
   width: 100%;
   position: sticky;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(16px);
+  top: 0px;
+  z-index: 200;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
   padding: 16px 0px;
   display: flex;
   flex-direction: row;
