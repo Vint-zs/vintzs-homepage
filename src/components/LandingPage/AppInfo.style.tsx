@@ -1,32 +1,36 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   position: relative;
-  margin: 100px 0px;
-`;
 
-export const InnerContainer = styled.div`
-  width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  width: 1200px;
+  margin: 100px calc(50% - 600px);
 `;
 
 export const TextContainer = styled.div`
+  width: 590px;
   height: 100%;
   padding-top: 80px;
 `;
 
-export const LeftImageContainer = styled.div`
+const ImageContainer = styled.div`
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 480px;
   height: 640px;
   border-radius: 190px;
   box-shadow: 0px 8px 24px rgba(249, 153, 148, 0.1);
+`;
 
+export const LeftImageContainer = styled(ImageContainer)`
   background: linear-gradient(
     2.7deg,
     #ffd8d6 -11.08%,
@@ -43,12 +47,7 @@ export const LeftImageContainer = styled.div`
   }
 `;
 
-export const RightImageContainer = styled.div`
-  width: 480px;
-  height: 640px;
-  border-radius: 190px;
-  box-shadow: 0px 8px 24px rgba(249, 153, 148, 0.1);
-
+export const RightImageContainer = styled(ImageContainer)`
   background: linear-gradient(
     2.7deg,
     #ffd8d6 -11.08%,
@@ -57,29 +56,6 @@ export const RightImageContainer = styled.div`
   transform: rotate(-27.85deg);
   & > * {
     transform: rotate(27.85deg);
-  }
-`;
-export const ImageContainerPlaceholder = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  .left {
-    transform: rotate(23.43deg);
-    & > * {
-      transform: rotate(-23.43deg);
-    }
-    & > svg {
-      position: absolute;
-      left: 30px;
-      bottom: 50px;
-    }
-  }
-  .right {
-    transform: rotate(-27.85deg);
-    & > * {
-      transform: rotate(27.85deg);
-    }
   }
 `;
 

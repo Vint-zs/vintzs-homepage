@@ -22,6 +22,7 @@ export const Image = styled.img`
 
 export const TextContainer = styled.div`
   position: absolute;
+
   bottom: 50px;
   left: calc(50% - 330px);
 

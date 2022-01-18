@@ -10,9 +10,7 @@ interface IAppInfo {
 
 const LeftAppInfo = (props: Omit<IAppInfo, 'type'>) => (
   <>
-    <S.ImageContainerPlaceholder>
-      <S.LeftImageContainer>{props.SVGComponent}</S.LeftImageContainer>
-    </S.ImageContainerPlaceholder>
+    <S.LeftImageContainer>{props.SVGComponent}</S.LeftImageContainer>
     <S.TextContainer>
       <S.HeaderText>{props.appTitle}</S.HeaderText>
       {props.appInfo.map((element, index) => (
@@ -30,21 +28,17 @@ const RightAppInfo = (props: Omit<IAppInfo, 'type'>) => (
         <S.InfoText key={index}>{element}</S.InfoText>
       ))}
     </S.TextContainer>
-    <S.ImageContainerPlaceholder>
-      <S.RightImageContainer>{props.SVGComponent}</S.RightImageContainer>
-    </S.ImageContainerPlaceholder>
+    <S.RightImageContainer>{props.SVGComponent}</S.RightImageContainer>
   </>
 );
 
 const AppInfo = (props: IAppInfo) => (
   <S.Container>
-    <S.InnerContainer>
-      {props.type === 'left' ? (
-        <LeftAppInfo {...props} />
-      ) : (
-        <RightAppInfo {...props} />
-      )}
-    </S.InnerContainer>
+    {props.type === 'left' ? (
+      <LeftAppInfo {...props} />
+    ) : (
+      <RightAppInfo {...props} />
+    )}
   </S.Container>
 );
 
