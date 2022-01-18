@@ -17,16 +17,7 @@ export const Typo = styled.p<TypoProps>`
   }
 `;
 
-export const InnerContainer = styled.div`
-  width: 1200px;
-  height: 64px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const NavContainer = styled.div`
+export const Navigation = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -36,23 +27,28 @@ export const NavContainer = styled.div`
 
 export const HeaderButton = styled(Link)`
   width: 105px;
-  text-decoration: none;
 
+  &,
   &:visited {
     text-decoration: none;
   }
 `;
 
 export const Container = styled.div`
-  width: 100%;
   position: sticky;
-  top: 0px;
   z-index: 200;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(4px);
-  padding: 16px 0px;
+  top: 0px;
+
+  width: 1200px;
+  height: 64px;
+
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
+  padding: 16px calc(50% - 600px);
+
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px);
 `;

@@ -10,28 +10,20 @@ const Header = () => {
 
   return (
     <S.Container>
-      <S.InnerContainer>
-        <HeaderLogo />
-        <S.NavContainer>
-          <S.HeaderButton to="/">
-            {<S.Typo selected={selected === '/'}>{t('header.home')}</S.Typo>}
-          </S.HeaderButton>
-          <S.HeaderButton to="/about">
-            {
-              <S.Typo selected={selected === '/about'}>
-                {t('header.about')}
-              </S.Typo>
-            }
-          </S.HeaderButton>
-          <S.HeaderButton to="/contact">
-            {
-              <S.Typo selected={selected === '/contact'}>
-                {t('header.contact')}
-              </S.Typo>
-            }
-          </S.HeaderButton>
-        </S.NavContainer>
-      </S.InnerContainer>
+      <HeaderLogo />
+      <S.Navigation>
+        <S.HeaderButton to="/">
+          <S.Typo selected={selected === '/'}>{t('header.home')}</S.Typo>
+        </S.HeaderButton>
+        <S.HeaderButton to="/about">
+          <S.Typo selected={selected === '/about'}>{t('header.about')}</S.Typo>
+        </S.HeaderButton>
+        <S.HeaderButton to="/contact">
+          <S.Typo selected={selected === '/contact'}>
+            {t('header.contact')}
+          </S.Typo>
+        </S.HeaderButton>
+      </S.Navigation>
     </S.Container>
   );
 };
