@@ -1,5 +1,4 @@
-// src/assets/styles/global-styles.ts
-import { createGlobalStyle, DefaultTheme } from 'styled-components';
+import styled, { createGlobalStyle, DefaultTheme } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
 export const color = {
@@ -36,21 +35,25 @@ const GlobalStyle = createGlobalStyle`
   }
   * {
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
   }
 
   body {
     width: 100vw;
-    min-height: 100vh;
     overflow-x: hidden;
-    .root {
-      position: relative;
-    }
+    min-height: 100vh;
+    position: relative;
   }
 
   h1, h2, h3, h4, h5, h6, p, a, div, span, button {
     font-family: 'Noto Sans KR', 'Gmarket Sans' sans-serif;
   }
+`;
+
+export const AppContainer = styled.div`
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 215px);
 `;
 
 export default GlobalStyle;

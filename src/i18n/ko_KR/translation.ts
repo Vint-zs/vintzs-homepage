@@ -40,6 +40,18 @@ const koreanText = {
       '사랑스러운 펫이 편지를 배송하고, 세상과 연결시켜줍니다.',
     ],
   },
+  contact_page: {
+    title: 'Vintzs와 함께 놀아보실래요?',
+    info: '즐길 줄 아는 분이라면 누구든 환영입니다!',
+    join_button: 'Vintzs 합류하기',
+  },
+  not_found_page: {
+    title: '찾고계신 페이지가 없어요!',
+    info: [
+      '해당 페이지가 더 이상 존재하지 않습니다. ',
+      '입력하신 정보가 정확한지 확인해주세요.',
+    ],
+  },
 };
 
 export default koreanText;
