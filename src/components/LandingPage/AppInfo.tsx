@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import styled from 'styled-components';
+import * as S from 'components/LandingPage/AppInfo.style';
 
 interface IAppInfo {
   type: 'left' | 'right';
@@ -8,119 +8,44 @@ interface IAppInfo {
   appInfo: string[];
 }
 
-const SContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-  margin: 100px 0px;
+const LeftAppInfo = (props: Omit<IAppInfo, 'type'>) => (
+  <>
+    <S.ImageContainerPlaceholder>
+      <S.LeftImageContainer>{props.SVGComponent}</S.LeftImageContainer>
+    </S.ImageContainerPlaceholder>
+    <S.TextContainer>
+      <S.HeaderText>{props.appTitle}</S.HeaderText>
+      {props.appInfo.map((element, index) => (
+        <S.InfoText key={index}>{element}</S.InfoText>
+      ))}
+    </S.TextContainer>
+  </>
+);
 
-  .innerContainer {
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .textContainer {
-    height: 100%;
-    padding-top: 80px;
-  }
-`;
+const RightAppInfo = (props: Omit<IAppInfo, 'type'>) => (
+  <>
+    <S.TextContainer>
+      <S.HeaderText>{props.appTitle}</S.HeaderText>
+      {props.appInfo.map((element, index) => (
+        <S.InfoText key={index}>{element}</S.InfoText>
+      ))}
+    </S.TextContainer>
+    <S.ImageContainerPlaceholder>
+      <S.RightImageContainer>{props.SVGComponent}</S.RightImageContainer>
+    </S.ImageContainerPlaceholder>
+  </>
+);
 
-const SImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  div {
-    width: 480px;
-    height: 640px;
-    border-radius: 190px;
-    box-shadow: 0px 8px 24px rgba(249, 153, 148, 0.1);
-  }
-
-  .left {
-    background: linear-gradient(
-      2.7deg,
-      #ffd8d6 -11.08%,
-      rgba(255, 216, 214, 0) 92.88%
-    );
-    transform: rotate(23.43deg);
-    & > * {
-      transform: rotate(-23.43deg);
-    }
-    & > svg {
-      position: absolute;
-      left: 30px;
-      bottom: 50px;
-    }
-  }
-  .right {
-    background: linear-gradient(
-      2.7deg,
-      #ffd8d6 -11.08%,
-      rgba(255, 216, 214, 0) 92.88%
-    );
-    transform: rotate(-27.85deg);
-    & > * {
-      transform: rotate(27.85deg);
-    }
-  }
-`;
-
-const SHeaderText = styled.p`
-  font-family: 'Gmarket Sans';
-  font-weight: 700;
-  font-size: 42px;
-  margin-bottom: 36px;
-  color: ${(props) => props.theme.palette.defaultBlackFont};
-`;
-
-const SInfoText = styled.p`
-  font-family: 'Noto Sans KR';
-  font-weight: 400;
-  margin-bottom: 16px;
-  color: ${(props) => props.theme.palette.secondaryBlackFont};
-`;
-
-const AppInfo = (props: IAppInfo) => {
-  if (props.type === 'left') {
-    return (
-      <SContainer>
-        <div className="innerContainer">
-          <SImageContainer>
-            <div className="left">{props.SVGComponent}</div>
-          </SImageContainer>
-          <div className="textContainer">
-            <SHeaderText>{props.appTitle}</SHeaderText>
-            {props.appInfo.map((element, index) => (
-              <SInfoText key={index}>{element}</SInfoText>
-            ))}
-          </div>
-        </div>
-      </SContainer>
-    );
-  }
-  if (props.type === 'right') {
-    return (
-      <SContainer>
-        <div className="innerContainer">
-          <div className="textContainer">
-            <SHeaderText>{props.appTitle}</SHeaderText>
-            {props.appInfo.map((element, index) => (
-              <SInfoText key={index}>{element}</SInfoText>
-            ))}
-          </div>
-          <SImageContainer>
-            <div className="right">{props.SVGComponent}</div>
-          </SImageContainer>
-        </div>
-      </SContainer>
-    );
-  }
-  return <></>;
-};
+const AppInfo = (props: IAppInfo) => (
+  <S.Container>
+    <S.InnerContainer>
+      {props.type === 'left' ? (
+        <LeftAppInfo {...props} />
+      ) : (
+        <RightAppInfo {...props} />
+      )}
+    </S.InnerContainer>
+  </S.Container>
+);
 
 export default AppInfo;
