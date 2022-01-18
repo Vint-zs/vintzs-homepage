@@ -1,19 +1,19 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { SContainer, STextContainer } from './style';
 import ContactCat from 'assets/contact/ContactCat.svg';
+import * as S from 'pages/ContactPage/Page.style';
 
 const ContactPage = () => {
   const { t } = useTranslation();
   return (
-    <SContainer>
+    <S.Container>
       <ContactCat />
-      <STextContainer>
+      <S.TextContainer>
         <h3>{t('contact_page.title')}</h3>
         <p>{t('contact_page.info')}</p>
         <button>{t('contact_page.join_button')}</button>
-      </STextContainer>
-    </SContainer>
+      </S.TextContainer>
+    </S.Container>
   );
 };
 
