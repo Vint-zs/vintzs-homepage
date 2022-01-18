@@ -8,17 +8,11 @@ const Footer = () => {
 
   return (
     <S.Container>
-      <S.InnerContainer>
-        <FooterLogo />
-        <S.NavContainer>
-          <div>
-            <S.Link href={'mailto:vintzscompany@gmail.com'}>
-              vintzscompany@gmail.com
-            </S.Link>
-          </div>
-          <p>{t('footer.copyright')}</p>
-        </S.NavContainer>
-      </S.InnerContainer>
+      <FooterLogo />
+      <S.Link href={'mailto:vintzscompany@gmail.com'}>
+        vintzscompany@gmail.com
+      </S.Link>
+      <p>{t('footer.copyright')}</p>
     </S.Container>
   );
 };

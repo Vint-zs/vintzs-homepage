@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 
-export const InnerContainer = styled.div`
-  width: 1200px;
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 16px;
-`;
+  justify-content: center;
 
-export const NavContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  width: 1200px;
+  padding: 16px calc(50% - 600px);
+  background-color: ${({ theme }) => theme.palette.defaultBackground};
 `;
 
 export const Link = styled.a`
@@ -18,14 +15,6 @@ export const Link = styled.a`
   font-weight: 400;
   font-size: 14px;
   width: 100%;
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  padding: 16px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: ${({ theme }) => theme.palette.defaultBackground};
+  margin-top: 16px;
+  margin-bottom: 4px;
 `;
