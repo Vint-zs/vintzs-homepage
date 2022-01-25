@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SContainer = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,7 +10,7 @@ const SContainer = styled.div`
   gap: 32px;
 `;
 
-const STextContainer = styled.div`
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   h3 {
@@ -24,5 +24,3 @@ const STextContainer = styled.div`
     margin-bottom: 4px;
   }
 `;
-
-export { SContainer, STextContainer };

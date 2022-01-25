@@ -1,17 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import SContainer from './style';
 import HaksikImage from 'assets/landing/HaksikImage.svg';
 import MeetingImage from 'assets/landing/MeetingImage.svg';
 import PetpalImage from 'assets/landing/PetpalImage.svg';
 import AppInfo from 'components/LandingPage/AppInfo';
 import Banner from 'components/LandingPage/Banner';
+import * as S from 'pages/LandingPage/Page.style';
 
 const LandingPage = () => {
   const { t } = useTranslation();
 
   return (
-    <SContainer>
+    <S.Container>
       <Banner />
       <AppInfo
         SVGComponent={<PetpalImage />}
@@ -43,7 +43,7 @@ const LandingPage = () => {
           t('haksikInfo.info.2'),
         ]}
       />
-    </SContainer>
+    </S.Container>
   );
 };
 

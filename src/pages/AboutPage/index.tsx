@@ -1,11 +1,11 @@
 import React from 'react';
-import SContainer from './style';
 import Introduce from 'components/Introduce';
+import * as S from 'pages/AboutPage/Page.style';
 
 const AboutPage = () => (
-  <SContainer>
+  <S.Container>
     <Introduce />
-  </SContainer>
+  </S.Container>
 );
 
 export default AboutPage;

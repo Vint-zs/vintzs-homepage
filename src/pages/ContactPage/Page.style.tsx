@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SContainer = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,7 +10,7 @@ const SContainer = styled.div`
   gap: 24px;
 `;
 
-const STextContainer = styled.div`
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -42,5 +42,3 @@ const STextContainer = styled.div`
     }
   }
 `;
-
-export { SContainer, STextContainer };
